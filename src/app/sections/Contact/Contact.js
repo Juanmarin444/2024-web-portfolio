@@ -26,7 +26,7 @@ export default function Contact () {
             {/* <div>
               <div data-netlify-recaptcha=""></div>
             </div> */}
-            <input className="hover:text-gray-400" type="submit" value="SEND" />
+            <input className="border-b-2 border-neutral-100 dark:border-neutral-900 hover:border-neutral-900 dark:hover:text-neutral-50 dark:hover:border-neutral-100 cursor-pointer" type="submit" value="SEND" />
           </form>
         </div>
       </div>

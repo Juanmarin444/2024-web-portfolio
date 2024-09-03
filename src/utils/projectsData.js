@@ -1,13 +1,13 @@
-import taskManager from '../assets/projects/task-manager-demo.gif';
-import courseTracker from '../assets/projects/courseTracker.png';
-import worldClock from '../assets/projects/world-clocks-demo.gif';
-import weatherApp from '../assets/projects/weather-app-demo.gif';
-import jcomm from '../assets/projects/j-comm.gif';
-import javascriptArcade from '../assets/projects/javascript-arcade-demo.gif';
-import windowsEmail from '../assets/projects/windowsEmail.gif';
-import brilliantEmail from '../assets/projects/brilliantEmail.gif';
-import grammarlyEmail from '../assets/projects/grammarlyEmail.gif';
-import harleyDavidsonEmail from '../assets/projects/harleyDavidsonEmail.gif';
+import taskManager from '../../public/assets/projects/task-manager-demo.gif';
+import courseTracker from '../../public/assets/projects/courseTracker.png';
+import worldClock from '../../public/assets/projects/world-clocks-demo.gif';
+import weatherApp from '../../public/assets/projects/weather-app-demo.gif';
+import jcomm from '../../public/assets/projects/j-comm.gif';
+import javascriptArcade from '../../public/assets/projects/javascript-arcade-demo.gif';
+import windowsEmail from '../../public/assets/projects/windowsEmail.gif';
+import brilliantEmail from '../../public/assets/projects/brilliantEmail.gif';
+import grammarlyEmail from '../../public/assets/projects/grammarlyEmail.gif';
+import harleyDavidsonEmail from '../../public/assets/projects/harleyDavidsonEmail.gif';
 
 export const myprojects = {
   taskManagerData : {
