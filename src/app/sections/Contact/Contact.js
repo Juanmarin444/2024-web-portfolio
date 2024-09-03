@@ -42,29 +42,29 @@ export default function Contact () {
           <h2>Hey, thanks for stopping by! Got something to share? Hit me up using this form. I’m looking forward to hearing from you.</h2>
         </div>
         <div className="w-full sm:w-1/2 p-4">
-          <form className="text-base md:text-lg lg:text-xl" name="contact v1" onSubmit={handleFormSubmit}>
+          <form className="text-base md:text-lg lg:text-xl text-neutral-900 dark:text-neutral-100" name="contact v1" onSubmit={handleFormSubmit}>
             <input type="hidden" name="form-name" value="contact v1" />
             <label className="w-full" >Name
-              <input className="w-full p-2 m-2" type="text" name="name" size="50" placeholder="Your name..." />
+              <input className="w-full p-2 m-2 dark:bg-neutral-700" type="text" name="name" size="50" placeholder="Your name..." />
             </label>
             <label className="w-full" >Email
-              <input className="w-full p-2 m-2" type="email" name="email" size="50" placeholder="Your email..." />
+              <input className="w-full p-2 m-2 dark:bg-neutral-700" type="email" name="email" size="50" placeholder="Your email..." />
             </label>
             <label className="w-full" >Message
-              <textarea className="w-full p-2 m-2" name="message" rows="5" cols="50" placeholder="Your message..." ></textarea>
+              <textarea className="w-full p-2 m-2 dark:bg-neutral-700" name="message" rows="5" cols="50" placeholder="Your message..." ></textarea>
             </label>
             {/* <div>
               <div data-netlify-recaptcha=""></div>
             </div> */}
             <input className="border-b-2 border-neutral-100 dark:border-neutral-900 hover:border-neutral-900 dark:hover:text-neutral-50 dark:hover:border-neutral-100 cursor-pointer" type="submit" value="SEND" />
             {status === 'ok' && (
-              <div className="alert alert-success">
+              <div className="alert alert-success flex gap-1">
                 <SuccessIcon />
                 Submitted!
               </div>
             )}
             {status === 'error' && (
-              <div className="alert alert-error">
+              <div className="alert alert-error flex gap-1">
                 <ErrorIcon />
                 {error}
               </div>
