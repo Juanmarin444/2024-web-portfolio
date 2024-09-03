@@ -1,8 +1,21 @@
+'use client'
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] })
 
 export default function Contact () {
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await fetch('/__forms.html', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams(formData).toString()
+    });
+    // Success & error handling should come here
+  };
+
   return (
     <div className="py-10 md:py-20 lg:py-24 flex flex-col items-center">
       <h1 className={`text-4xl md:text-5xl lg:text-6xl sm:self-start ${montserrat.className} py-10`}>Hit me up</h1>
@@ -12,7 +25,7 @@ export default function Contact () {
           <h2>Hey, thanks for stopping by! Got something to share? Hit me up using this form. I’m looking forward to hearing from you.</h2>
         </div>
         <div className="w-full sm:w-1/2 p-4">
-          <form className="text-base md:text-lg lg:text-xl" name="contact v1" method="post" data-netlify="true">
+          <form className="text-base md:text-lg lg:text-xl" name="contact v1" onSubmit={handleFormSubmit}>
             <input type="hidden" name="form-name" value="contact v1" />
             <label className="w-full" >Name
               <input className="w-full p-2 m-2" type="text" name="name" size="50" placeholder="Your name..." />
