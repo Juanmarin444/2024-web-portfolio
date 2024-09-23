@@ -39,12 +39,12 @@ export const myprojects = {
     url: "https://weather-app-juanmarin.netlify.app/",
     gitUrl: "https://github.com/Juanmarin444/Weather-App"
   },
-  smartShopData : {
+  jCommData : {
     name: "J-COMM",
     image: jcomm,
     desc: "An ecommerce site made using Mongodb, Express, React, and Node",
-    url: "https://j-comm.herokuapp.com/",
-    gitUrl: "https://github.com/Juanmarin444/smartshop"
+    url: "https://jcomm.vercel.app/",
+    gitUrl: "https://github.com/Juanmarin444/J-Comm_v2"
   },
   javascriptArcadeData : {
     name: "Javascript Arcade",

@@ -12,7 +12,7 @@ export default function Projects ()  {
         <h1 className={`text-2xl md:text-3xl lg:text-4xl sm:ml-10 ${montserrat.className}`}>JavaScript</h1>
         <div className="flex flex-row flex-wrap gap-10 justify-center">
           <Project image={myprojects.javascriptArcadeData.image} name={myprojects.javascriptArcadeData.name} description={myprojects.javascriptArcadeData.desc} url={myprojects.javascriptArcadeData.url} github={myprojects.javascriptArcadeData.gitUrl}/>
-          <Project image={myprojects.smartShopData.image} name={myprojects.smartShopData.name} description={myprojects.smartShopData.desc} url={myprojects.smartShopData.url} github={myprojects.smartShopData.gitUrl}/>
+          <Project image={myprojects.jCommData.image} name={myprojects.jCommData.name} description={myprojects.jCommData.desc} url={myprojects.jCommData.url} github={myprojects.jCommData.gitUrl}/>
           <Project image={myprojects.worldClockData.image} name={myprojects.worldClockData.name} description={myprojects.worldClockData.desc} url={myprojects.worldClockData.url} github={myprojects.worldClockData.gitUrl}/>
           <Project image={myprojects.weatherAppData.image} name={myprojects.weatherAppData.name} description={myprojects.weatherAppData.desc} url={myprojects.weatherAppData.url} github={myprojects.weatherAppData.gitUrl}/>
         </div>
